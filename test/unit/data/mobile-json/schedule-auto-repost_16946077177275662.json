@@ -3,54 +3,100 @@
     "keyword": "Feature",
     "type": "feature",
     "description": "",
-    "line": 4,
-    "name": "Login - Verify Login Error Messages3",
-    "uri": "test/agentnet/features/smoke/login/LoginInvalidCredentials.feature",
+    "line": 3,
+    "name": "Schedule Auto-Repost",
+    "uri": "test/agentnet/features/smoke/adProducts/ScheduleAutoRepostPastCurrent.feature",
+    "tags": [
+      {
+        "location": {
+          "line": 1,
+          "column": 1
+        },
+        "name": "@agentnet",
+        "id": "0c98c0b6-5a2a-4b2d-bb12-885587244f92"
+      },
+      {
+        "location": {
+          "line": 1,
+          "column": 11
+        },
+        "name": "@deeplink",
+        "id": "f41c925d-ba5d-4306-baae-d1587fa7dff1"
+      },
+      {
+        "location": {
+          "line": 1,
+          "column": 21
+        },
+        "name": "@smoke",
+        "id": "8e347b79-6d10-4fce-b35c-22608fb09bdf"
+      },
+      {
+        "location": {
+          "line": 1,
+          "column": 28
+        },
+        "name": "@autoRepost",
+        "id": "d216a58d-e0e2-4e0a-ad6c-9714307f152b"
+      },
+      {
+        "location": {
+          "line": 2,
+          "column": 1
+        },
+        "name": "@android",
+        "id": "4e53c6a7-3162-4c98-9431-f6b5cdeba209"
+      },
+      {
+        "location": {
+          "line": 2,
+          "column": 10
+        },
+        "name": "@ios",
+        "id": "2b132dc3-ed3a-44e3-acf5-15e7e2bd1527"
+      }
+    ],
     "elements": [
       {
         "keyword": "Scenario",
         "type": "scenario",
         "description": "",
-        "name": "Verify error message for invalid email credential",
+        "name": "Schedule auto-repost for next day",
         "tags": [
           {
             "name": "@agentnet",
-            "astNodeId": "4fcd1fc7-2a22-4bbc-837b-1fcaf327f5da"
+            "astNodeId": "0c98c0b6-5a2a-4b2d-bb12-885587244f92"
+          },
+          {
+            "name": "@deeplink",
+            "astNodeId": "f41c925d-ba5d-4306-baae-d1587fa7dff1"
           },
           {
             "name": "@smoke",
-            "astNodeId": "6f74bad8-e486-4b11-a26d-f43e8cbbd62d"
+            "astNodeId": "8e347b79-6d10-4fce-b35c-22608fb09bdf"
           },
           {
-            "name": "@SG",
-            "astNodeId": "579944ca-d58a-4c2c-9190-6aae3930aa5f"
-          },
-          {
-            "name": "@MY",
-            "astNodeId": "5a43059a-b8d1-48e9-bc0e-c60baa3d91ce"
-          },
-          {
-            "name": "@DD",
-            "astNodeId": "6a459084-9d29-4863-90ee-afc0a2df2510"
-          },
-          {
-            "name": "@DDE",
-            "astNodeId": "7d431e0e-0b5d-4083-8418-1b693de58a69"
+            "name": "@autoRepost",
+            "astNodeId": "d216a58d-e0e2-4e0a-ad6c-9714307f152b"
           },
           {
             "name": "@android",
-            "astNodeId": "fe821245-fdd1-487c-8f35-e49f132c1ecf"
+            "astNodeId": "4e53c6a7-3162-4c98-9431-f6b5cdeba209"
           },
           {
             "name": "@ios",
-            "astNodeId": "6a5e61e5-8eb0-409b-a23b-a489e6bd3768"
+            "astNodeId": "2b132dc3-ed3a-44e3-acf5-15e7e2bd1527"
           },
           {
-            "name": "@test1",
-            "astNodeId": "673695e7-3a54-42fd-b9c5-2ba3446dca94"
+            "name": "@SG",
+            "astNodeId": "568a2420-439a-49c9-b358-3e96b11365c7"
+          },
+          {
+            "name": "@MY",
+            "astNodeId": "be26c8ce-c1ba-40e6-a7f2-51057d90d49b"
           }
         ],
-        "id": "login---verify-login-error-messagesverify-error-message-for-invalid-email-credential",
+        "id": "schedule-auto-repostschedule-auto-repost-for-next-day",
         "steps": [
           {
             "arguments": [],
@@ -59,180 +105,6 @@
             "result": {
               "status": "passed",
               "duration": 1000000
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Before",
-            "name": "@agentnet and not @deeplink",
-            "result": {
-              "status": "passed",
-              "duration": 754000000
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Before",
-            "name": "",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When",
-            "name": "I enter invalid \"email\" with \"abigail\" in login screen",
-            "result": {
-              "status": "passed",
-              "duration": 3643000000
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then",
-            "name": "I should see \"email\" with correct error message",
-            "result": {
-              "status": "passed",
-              "duration": 593000000
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After",
-            "name": "@agentnet or @hardResetApp",
-            "result": {
-              "status": "passed",
-              "duration": 10549000000
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After",
-            "name": "",
-            "result": {
-              "status": "passed",
-              "duration": 4764000000
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            },
-            "embeddings": [
-              {
-                "data": "{}",
-                "mime_type": "application/json"
-              },
-              {
-                "data": "{\"CommercialSaleListingId\":\"24198245\",\"CommercialRentListingId\":\"24490962\",\"ResidentialSaleListingId\":\"23522080\",\"ResidentialRentListingId\":\"24589759\"}",
-                "mime_type": "application/json"
-              }
-            ]
-          },
-          {
-            "arguments": [],
-            "keyword": "After",
-            "name": "",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "type": "scenario",
-        "description": "",
-        "name": "Verify error message for invalid password credential",
-        "tags": [
-          {
-            "name": "@agentnet",
-            "astNodeId": "4fcd1fc7-2a22-4bbc-837b-1fcaf327f5da"
-          },
-          {
-            "name": "@smoke",
-            "astNodeId": "6f74bad8-e486-4b11-a26d-f43e8cbbd62d"
-          },
-          {
-            "name": "@SG",
-            "astNodeId": "579944ca-d58a-4c2c-9190-6aae3930aa5f"
-          },
-          {
-            "name": "@MY",
-            "astNodeId": "5a43059a-b8d1-48e9-bc0e-c60baa3d91ce"
-          },
-          {
-            "name": "@DD",
-            "astNodeId": "6a459084-9d29-4863-90ee-afc0a2df2510"
-          },
-          {
-            "name": "@DDE",
-            "astNodeId": "7d431e0e-0b5d-4083-8418-1b693de58a69"
-          },
-          {
-            "name": "@android",
-            "astNodeId": "fe821245-fdd1-487c-8f35-e49f132c1ecf"
-          },
-          {
-            "name": "@ios",
-            "astNodeId": "6a5e61e5-8eb0-409b-a23b-a489e6bd3768"
-          },
-          {
-            "name": "@test1",
-            "astNodeId": "673695e7-3a54-42fd-b9c5-2ba3446dca94"
-          }
-        ],
-        "id": "login---verify-login-error-messagesverify-error-message-for-invalid-password-credential",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before",
-            "name": "",
-            "result": {
-              "status": "passed",
-              "duration": 0
-            },
-            "line": null,
-            "match": {
-              "location": "can not be determined with webdriver.io"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Before",
-            "name": "@agentnet and not @deeplink",
-            "result": {
-              "status": "passed",
-              "duration": 783000000
             },
             "line": null,
             "match": {
@@ -254,11 +126,50 @@
           },
           {
             "arguments": [],
-            "keyword": "When",
-            "name": "I enter invalid \"password\" with \"test\" in login screen",
+            "keyword": "Before",
+            "name": "@agentnet and @deeplink",
             "result": {
               "status": "passed",
-              "duration": 3894000000
+              "duration": 3000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "@agentnet and @deeplink",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "I use deeplink for \"toAutoRepostAgent\" to go to \"ACT\" listing tab",
+            "result": {
+              "status": "passed",
+              "duration": 543000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "I activate \"auto-repost\" for first listing via bottom sheet",
+            "result": {
+              "status": "passed",
+              "duration": 7855000000
             },
             "line": null,
             "match": {
@@ -268,10 +179,127 @@
           {
             "arguments": [],
             "keyword": "Then",
-            "name": "I should see \"password\" with correct error message",
+            "name": "I should not see next button in auto-repost screen",
             "result": {
               "status": "passed",
-              "duration": 652000000
+              "duration": 1200000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "I schedule auto-repost for next day at \"15:30\"",
+            "result": {
+              "status": "passed",
+              "duration": 5299000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "I should see provided time tag for next day in auto-repost screen",
+            "result": {
+              "status": "passed",
+              "duration": 656000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "I tap on Next to set duration in auto-repost screen",
+            "result": {
+              "status": "passed",
+              "duration": 194000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "I should see auto-repost date picker with default range of 7 days",
+            "result": {
+              "status": "passed",
+              "duration": 999000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "I tap on auto-repost date picker ok button",
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "I should see correct auto-repost summary details for this week",
+            "result": {
+              "status": "passed",
+              "duration": 6972000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "I tap on Schedule Now button in auto-repost summary screen",
+            "result": {
+              "status": "passed",
+              "duration": 296000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "I should see auto-repost confirmation and Done CTA",
+            "result": {
+              "status": "passed",
+              "duration": 5636000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "name": "I should see bottom sheet with active Auto-Repost",
+            "result": {
+              "status": "passed",
+              "duration": 138000000
             },
             "line": null,
             "match": {
@@ -284,7 +312,7 @@
             "name": "@agentnet or @hardResetApp",
             "result": {
               "status": "passed",
-              "duration": 10514000000
+              "duration": 2208000000
             },
             "line": null,
             "match": {
@@ -297,7 +325,7 @@
             "name": "",
             "result": {
               "status": "passed",
-              "duration": 4754000000
+              "duration": 142000000
             },
             "line": null,
             "match": {
@@ -305,7 +333,7 @@
             },
             "embeddings": [
               {
-                "data": "{}",
+                "data": "{\"scheduleTime\":\"15:30\",\"dayToRepost\":\"Thursday\",\"currentDay\":\"13 Sep\",\"seventhDay\":\"19 Sep\",\"seventhMonthYear\":\"September 2023\",\"expectedDateRange\":\"13 Sep - 19 Sep 2023\",\"expectedNeededCreds\":10}",
                 "mime_type": "application/json"
               },
               {
@@ -330,7 +358,7 @@
         ]
       }
     ],
-    "id": "login---verify-login-error-messages",
+    "id": "schedule-auto-repost",
     "metadata": [
       {
         "name": "Country",
@@ -338,7 +366,7 @@
       },
       {
         "name": "Platform",
-        "value": "ios"
+        "value": "android"
       }
     ]
   }

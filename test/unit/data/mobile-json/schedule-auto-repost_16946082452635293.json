@@ -1,0 +1,386 @@
+[
+  {
+    "keyword": "Feature",
+    "type": "feature",
+    "description": "",
+    "line": 3,
+    "name": "Schedule Auto-Repost",
+    "uri": "test/agentnet/features/smoke/adProducts/ScheduleAutoRepostPastCurrent.feature",
+    "tags": [
+      {
+        "location": {
+          "line": 1,
+          "column": 1
+        },
+        "name": "@agentnet",
+        "id": "cc21a678-8807-4dbc-a08c-f78b2c12cc4a"
+      },
+      {
+        "location": {
+          "line": 1,
+          "column": 11
+        },
+        "name": "@deeplink",
+        "id": "b4adf150-36de-46fb-be56-9d3d672fabc9"
+      },
+      {
+        "location": {
+          "line": 1,
+          "column": 21
+        },
+        "name": "@smoke",
+        "id": "3046ef7a-47b8-4426-87f7-492e40bd79f2"
+      },
+      {
+        "location": {
+          "line": 1,
+          "column": 28
+        },
+        "name": "@autoRepost",
+        "id": "f9c549cb-6a68-42f7-a0cd-9fd13212c781"
+      },
+      {
+        "location": {
+          "line": 2,
+          "column": 1
+        },
+        "name": "@android",
+        "id": "5c495a9d-263e-4106-9223-6f8897232216"
+      },
+      {
+        "location": {
+          "line": 2,
+          "column": 10
+        },
+        "name": "@ios",
+        "id": "f38bde6e-6617-4fdf-831b-a2a8f476cf71"
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Schedule auto-repost for next day",
+        "tags": [
+          {
+            "name": "@agentnet",
+            "astNodeId": "cc21a678-8807-4dbc-a08c-f78b2c12cc4a"
+          },
+          {
+            "name": "@deeplink",
+            "astNodeId": "b4adf150-36de-46fb-be56-9d3d672fabc9"
+          },
+          {
+            "name": "@smoke",
+            "astNodeId": "3046ef7a-47b8-4426-87f7-492e40bd79f2"
+          },
+          {
+            "name": "@autoRepost",
+            "astNodeId": "f9c549cb-6a68-42f7-a0cd-9fd13212c781"
+          },
+          {
+            "name": "@android",
+            "astNodeId": "5c495a9d-263e-4106-9223-6f8897232216"
+          },
+          {
+            "name": "@ios",
+            "astNodeId": "f38bde6e-6617-4fdf-831b-a2a8f476cf71"
+          },
+          {
+            "name": "@DD",
+            "astNodeId": "e5da5929-9411-4d26-b09c-345d50d359a9"
+          },
+          {
+            "name": "@DDE",
+            "astNodeId": "fad285a6-2d53-4d64-b36b-ca1f0914023c"
+          }
+        ],
+        "id": "schedule-auto-repostschedule-auto-repost-for-next-day",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "@agentnet and @deeplink",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "@agentnet and @deeplink",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "I use deeplink for \"toAutoRepostAgent\" to go to \"ACT\" listing tab",
+            "result": {
+              "status": "passed",
+              "duration": 755000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "I activate \"auto-repost\" for first listing via bottom sheet",
+            "result": {
+              "status": "passed",
+              "duration": 10568000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "I should see disabled Auto-Repost Listing button",
+            "result": {
+              "status": "passed",
+              "duration": 1236000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "name": "I schedule auto-repost for next day at \"15:30\"",
+            "result": {
+              "status": "passed",
+              "duration": 15396000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "I should see provided time tag for next day in auto-repost screen",
+            "result": {
+              "status": "passed",
+              "duration": 789000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "I tap on edit button for custom duration in auto-repost screen",
+            "result": {
+              "status": "passed",
+              "duration": 3294000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "I should see auto-repost date picker with default range of 7 days",
+            "result": {
+              "status": "passed",
+              "duration": 1009000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "name": "I tap on auto-repost date picker ok button",
+            "result": {
+              "status": "passed",
+              "duration": 72000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "I tap on Custom Auto-Repost Listing button",
+            "result": {
+              "status": "passed",
+              "duration": 751000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "I should see correct auto-repost summary details for this week",
+            "result": {
+              "status": "passed",
+              "duration": 5689000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "I tap on Schedule Now button in auto-repost summary screen",
+            "result": {
+              "status": "passed",
+              "duration": 110000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "I should see auto-repost confirmation for TH",
+            "result": {
+              "status": "passed",
+              "duration": 3526000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "name": "I should see bottom sheet with active Auto-Repost",
+            "result": {
+              "status": "passed",
+              "duration": 117000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "@agentnet or @hardResetApp",
+            "result": {
+              "status": "passed",
+              "duration": 3143000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 239000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            },
+            "embeddings": [
+              {
+                "data": "{\"scheduleTime\":\"15:30\",\"dayToRepost\":\"พฤหัสบดี\",\"currentDay\":\"13 ก.ย.\",\"seventhDay\":\"19 ก.ย.\",\"seventhMonthYear\":\"กันยายน 2566\",\"expectedDateRange\":\"13 ก.ย. - 19 ก.ย. 2566\",\"expectedNeededCreds\":10}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "{\"CommercialSaleListingId\":\"24198245\",\"CommercialRentListingId\":\"24488186\",\"ResidentialSaleListingId\":\"24422151\",\"ResidentialRentListingId\":\"24374067\"}",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "schedule-auto-repost",
+    "metadata": [
+      {
+        "name": "Country",
+        "value": "DD"
+      },
+      {
+        "name": "Platform",
+        "value": "android"
+      }
+    ]
+  }
+]

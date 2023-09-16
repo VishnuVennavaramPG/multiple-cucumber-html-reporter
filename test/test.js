@@ -8,7 +8,7 @@ const test = require('../lib/generate-report');
  */
 test.generate({
     saveCollectedJSON: true,
-    jsonDir: './unit/data/temp-json/',
+    jsonDir: './unit/data/mobile-json/',
     reportPath: './.tmp/temp-json/',
     reportName: 'You can adjust this report name',
     customMetadata: true,

@@ -8,12 +8,11 @@ const test = require('../lib/generate-report');
  */
 test.generate({
     saveCollectedJSON: true,
-    jsonDir: './test/unit/data/json/',
-    reportPath: './.tmp/browsers/',
+    jsonDir: './unit/data/temp-json/',
+    reportPath: './.tmp/temp-json/',
     reportName: 'You can adjust this report name',
-    customMetadata: false,
+    customMetadata: true,
     displayDuration: true,
-    durationInMS: true,
     customData: {
         title: 'Run info',
         data: [
@@ -25,16 +24,17 @@ test.generate({
         ]
     }
 });
+/*
 
-/**
+/!**
  * Generate a report with array of embedded data
- */
+ *!/
 test.generate({
     saveCollectedJSON: true,
-    jsonDir: './test/unit/data/embedded-array-json/',
+    jsonDir: './unit/data/embedded-array-json/',
     reportPath: './.tmp/embedded-array/',
-    customStyle: path.join(__dirname, './custom.css'),
-    overrideStyle: path.join(__dirname, './my.css'),
+    //customStyle: path.join(__dirname, './custom.css'),
+    //overrideStyle: path.join(__dirname, './my.css'),
     customMetadata: false,
     pageTitle: 'A custom page title',
     pageFooter: '<div><p>Some custom footer data can be placed here</p></div>',
@@ -48,12 +48,12 @@ test.generate({
     }
 });
 
-/**
+/!**
  * Generate a report for browsers with report time
- */
+ *!/
 test.generate({
     saveCollectedJSON: true,
-    jsonDir: './test/unit/data/json/',
+    jsonDir: './unit/data/json/',
     reportPath: './.tmp/browsers-with-report-time/',
     reportName: 'You can adjust this report name',
     customMetadata: false,
@@ -73,13 +73,13 @@ test.generate({
     }
 });
 
-/**
+/!**
  * Generate a report with custom metadata
  * NOTE: must be last, if you use customMetadata you cannot reuse generator
- */
+ *!/
 test.generate({
     saveCollectedJSON: true,
-    jsonDir: './test/unit/data/custom-metadata-json/',
+    jsonDir: './unit/data/custom-metadata-json/',
     reportPath: './.tmp/custom-metadata/',
     customMetadata: true,
     displayDuration: true,
@@ -91,3 +91,4 @@ test.generate({
         { "name": "platform version", "value": "16.04" }
     ]
 });
+*/

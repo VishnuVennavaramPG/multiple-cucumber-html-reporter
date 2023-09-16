@@ -1,0 +1,345 @@
+[
+  {
+    "keyword": "Feature",
+    "type": "feature",
+    "description": "",
+    "line": 4,
+    "name": "Login - Verify Login Error Messages3",
+    "uri": "test/agentnet/features/smoke/login/LoginInvalidCredentials.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Verify error message for invalid email credential",
+        "tags": [
+          {
+            "name": "@agentnet",
+            "astNodeId": "4fcd1fc7-2a22-4bbc-837b-1fcaf327f5da"
+          },
+          {
+            "name": "@smoke",
+            "astNodeId": "6f74bad8-e486-4b11-a26d-f43e8cbbd62d"
+          },
+          {
+            "name": "@SG",
+            "astNodeId": "579944ca-d58a-4c2c-9190-6aae3930aa5f"
+          },
+          {
+            "name": "@MY",
+            "astNodeId": "5a43059a-b8d1-48e9-bc0e-c60baa3d91ce"
+          },
+          {
+            "name": "@DD",
+            "astNodeId": "6a459084-9d29-4863-90ee-afc0a2df2510"
+          },
+          {
+            "name": "@DDE",
+            "astNodeId": "7d431e0e-0b5d-4083-8418-1b693de58a69"
+          },
+          {
+            "name": "@android",
+            "astNodeId": "fe821245-fdd1-487c-8f35-e49f132c1ecf"
+          },
+          {
+            "name": "@ios",
+            "astNodeId": "6a5e61e5-8eb0-409b-a23b-a489e6bd3768"
+          },
+          {
+            "name": "@test1",
+            "astNodeId": "673695e7-3a54-42fd-b9c5-2ba3446dca94"
+          }
+        ],
+        "id": "login---verify-login-error-messagesverify-error-message-for-invalid-email-credential",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "@agentnet and not @deeplink",
+            "result": {
+              "status": "passed",
+              "duration": 754000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "I enter invalid \"email\" with \"abigail\" in login screen",
+            "result": {
+              "status": "passed",
+              "duration": 3643000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "I should see \"email\" with correct error message",
+            "result": {
+              "status": "passed",
+              "duration": 593000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "@agentnet or @hardResetApp",
+            "result": {
+              "status": "passed",
+              "duration": 10549000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 4764000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            },
+            "embeddings": [
+              {
+                "data": "{}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "{\"CommercialSaleListingId\":\"24198245\",\"CommercialRentListingId\":\"24490962\",\"ResidentialSaleListingId\":\"23522080\",\"ResidentialRentListingId\":\"24589759\"}",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Verify error message for invalid password credential",
+        "tags": [
+          {
+            "name": "@agentnet",
+            "astNodeId": "4fcd1fc7-2a22-4bbc-837b-1fcaf327f5da"
+          },
+          {
+            "name": "@smoke",
+            "astNodeId": "6f74bad8-e486-4b11-a26d-f43e8cbbd62d"
+          },
+          {
+            "name": "@SG",
+            "astNodeId": "579944ca-d58a-4c2c-9190-6aae3930aa5f"
+          },
+          {
+            "name": "@MY",
+            "astNodeId": "5a43059a-b8d1-48e9-bc0e-c60baa3d91ce"
+          },
+          {
+            "name": "@DD",
+            "astNodeId": "6a459084-9d29-4863-90ee-afc0a2df2510"
+          },
+          {
+            "name": "@DDE",
+            "astNodeId": "7d431e0e-0b5d-4083-8418-1b693de58a69"
+          },
+          {
+            "name": "@android",
+            "astNodeId": "fe821245-fdd1-487c-8f35-e49f132c1ecf"
+          },
+          {
+            "name": "@ios",
+            "astNodeId": "6a5e61e5-8eb0-409b-a23b-a489e6bd3768"
+          },
+          {
+            "name": "@test1",
+            "astNodeId": "673695e7-3a54-42fd-b9c5-2ba3446dca94"
+          }
+        ],
+        "id": "login---verify-login-error-messagesverify-error-message-for-invalid-password-credential",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 0
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "@agentnet and not @deeplink",
+            "result": {
+              "status": "passed",
+              "duration": 783000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "I enter invalid \"password\" with \"test\" in login screen",
+            "result": {
+              "status": "passed",
+              "duration": 3894000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "I should see \"password\" with correct error message",
+            "result": {
+              "status": "passed",
+              "duration": 652000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "@agentnet or @hardResetApp",
+            "result": {
+              "status": "passed",
+              "duration": 10514000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 4754000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            },
+            "embeddings": [
+              {
+                "data": "{}",
+                "mime_type": "application/json"
+              },
+              {
+                "data": "{\"CommercialSaleListingId\":\"24198245\",\"CommercialRentListingId\":\"24490962\",\"ResidentialSaleListingId\":\"23522080\",\"ResidentialRentListingId\":\"24589759\"}",
+                "mime_type": "application/json"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            },
+            "line": null,
+            "match": {
+              "location": "can not be determined with webdriver.io"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "login---verify-login-error-messages",
+    "metadata": [
+      {
+        "name": "Country",
+        "value": "SG"
+      },
+      {
+        "name": "Platform",
+        "value": "android"
+      }
+    ]
+  }
+]

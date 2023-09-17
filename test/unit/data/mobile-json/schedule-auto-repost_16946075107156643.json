@@ -6,56 +6,6 @@
     "line": 3,
     "name": "Schedule Auto-Repost",
     "uri": "test/agentnet/features/smoke/adProducts/ScheduleAutoRepostPastCurrent.feature",
-    "tags": [
-      {
-        "location": {
-          "line": 1,
-          "column": 1
-        },
-        "name": "@agentnet",
-        "id": "b76bd2f2-d749-422f-beb5-681ba6b1dc68"
-      },
-      {
-        "location": {
-          "line": 1,
-          "column": 11
-        },
-        "name": "@deeplink",
-        "id": "28345dbb-5c82-4a29-940a-4f92fa8872c2"
-      },
-      {
-        "location": {
-          "line": 1,
-          "column": 21
-        },
-        "name": "@smoke",
-        "id": "91b1805c-70ab-4a18-ba08-46136e44a00c"
-      },
-      {
-        "location": {
-          "line": 1,
-          "column": 28
-        },
-        "name": "@autoRepost",
-        "id": "26ecf96f-3b1a-4e27-b087-f8b91875b74a"
-      },
-      {
-        "location": {
-          "line": 2,
-          "column": 1
-        },
-        "name": "@android",
-        "id": "b466db28-3b8f-4b75-b8d0-d1aa75c68f08"
-      },
-      {
-        "location": {
-          "line": 2,
-          "column": 10
-        },
-        "name": "@ios",
-        "id": "7afb0f36-1a8a-47c4-be24-74303981cf56"
-      }
-    ],
     "elements": [
       {
         "keyword": "Scenario",

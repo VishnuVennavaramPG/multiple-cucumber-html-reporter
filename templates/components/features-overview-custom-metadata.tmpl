@@ -10,6 +10,35 @@
                 </li>
             </ul>
             <div class="clearfix"></div>
+            <script>
+            function setSearchValue(button) {
+                var searchInput = document.querySelector('input[type="search"]');
+                if (button.textContent !== "") {
+                    searchInput.value = button.textContent;
+                } else {
+                    searchInput.value = "";
+                }
+                // event.stopPropagation();
+                // searchInput.form.submit();  // Manually submit the form
+            }
+            </script>
+            <div>
+                <button onclick="setSearchValue("")">RESET</button>
+                <button onclick="setSearchValue(this)">SG</button>
+                <button onclick="setSearchValue(this)">MY</button>
+                <button onclick="setSearchValue(this)">DD</button>
+                <button onclick="setSearchValue(this)">DDE</button>
+                <button onclick="setSearchValue(this)">ios</button>
+                <button onclick="setSearchValue(this)">android</button>
+                <button onclick="setSearchValue(this)">SG ios</button>
+                <button onclick="setSearchValue(this)">SG android</button>
+                <button onclick="setSearchValue(this)">MY ios</button>
+                <button onclick="setSearchValue(this)">MY android</button>
+                <button onclick="setSearchValue(this)">DD ios</button>
+                <button onclick="setSearchValue(this)">DD android</button>
+                <button onclick="setSearchValue(this)">DDE ios</button>
+                <button onclick="setSearchValue(this)">DDE android</button>
+            </div>
         </div>
 
         <div class="x_content">
@@ -121,3 +150,4 @@
         </div>
     </div>
 </div>
+

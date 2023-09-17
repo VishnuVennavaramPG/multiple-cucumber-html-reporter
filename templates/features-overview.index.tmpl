@@ -79,6 +79,12 @@
                     </div>
                 </div>
 
+                <div class="col-md-6 col-lg-<% if (suite.customData) { %>4<% } else { %>6<% } %> col-xs-12">
+                    <div class="x_panel fixed_height_320">
+                        <%= sgAndroidScenarioOverviewChart %>
+                    </div>
+                </div>
+
                 <% if (suite.customData) { %>
                 <div class="col-lg-<% if (suite.customData) { %>4<% } else { %>6<% } %> col-xs-12">
                     <div class="x_panel fixed_height_320">
@@ -213,6 +219,33 @@
                                 getColor(".skipped-color", "#3498DB"),
                                 getColor(".ambiguous-color", "#b73122"),
                                 getColor(".not-defined-color", "#F39C12")
+                            ]
+                        }]
+                    },
+                    options: scenarioOptions
+                });
+
+                var scenarioOptions = {
+                    legend: false,
+                    responsive: false
+                };
+
+                new Chart(document.getElementById("country-platform-scenario-chart"), {
+                    type: 'doughnut',
+                    tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+                    data: {
+                        labels: [
+                            "Passed",
+                            "Failed"
+                        ],
+                        datasets: [{
+                            data: [
+                                <%= suite.subFeatures["SG-android"].scenarios.passed %>,
+                                <%= suite.subFeatures["SG-android"].scenarios.failed %>
+                            ],
+                            backgroundColor: [
+                                getColor(".passed-color", "#26B99A"),
+                                getColor(".failed-color", "#E74C3C")
                             ]
                         }]
                     },

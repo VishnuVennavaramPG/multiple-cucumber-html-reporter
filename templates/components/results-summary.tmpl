@@ -28,11 +28,18 @@
                     <tr>
                         <td><%= keys[i] %></td> <% /* First column with original headers */ %>
                         <% for (let resultKey in suite.resultsSummary[firstKey]) { %>
-
-                            <% let value = suite.resultsSummary[keys[i]][resultKey]; %>
-                            <td><%= value %></td>
-
+                            <% let value = Number(suite.resultsSummary[keys[i]][resultKey]); %>
+                            <% var statusIcon; %>
+                            <% var status; %>
+                            <% if (resultKey.includes('fail') && value > 10) { %>
+                                <% status = 'Failed'; %>
+                                <% statusIcon = 'exclamation-circle failed-color'; %>
+                                <td><strong><%= value %> <i class="fa fa-<%= statusIcon %> fa-lg" data-toggle="tooltip" data-placement="top" title="<%= status %>"><span><%= statusIcon %></span></i></strong></td>
+                            <% } else { %>
+                                <td><%= value %></td>
+                            <% } %>
                         <% } %>
+
                     </tr>
                 <% } %>
             </tbody>

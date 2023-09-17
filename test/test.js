@@ -10,7 +10,7 @@ test.generate({
     saveCollectedJSON: true,
     jsonDir: './unit/data/mobile-json/',
     reportPath: './.tmp/temp-json/',
-    reportName: 'You can adjust this report name',
+    reportName: 'Property Guru Mobile App Automation',
     customMetadata: true,
     displayDuration: true,
     customData: {

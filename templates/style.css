@@ -376,10 +376,10 @@ ul.quick-list li i {
     color: #757679;
 }
 
-/* TODO update the screenshot width */
 .screenshot{
     max-height: 40%;
     max-width: 40%;
+    border: 2px solid red;
 }
 
 /* Features / Scenarios */

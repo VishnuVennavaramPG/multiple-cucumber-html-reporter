@@ -15,20 +15,23 @@
         <table class="quick-list">
             <thead>
                 <tr>
-                    <th></th> <% /* Empty cell for the first column header */ %>
+                    <th>Platforms</th> <% /* Header for the first column */ %>
                     <% let keys = Object.keys(suite.resultsSummary); %>
-                    <% for (let i = 0; i < keys.length - 1; i++) { %>
-                        <th><%= keys[i] %></th>
+                    <% let firstKey = keys[0]; %>
+                    <% for (let resultKey in suite.resultsSummary[firstKey]) { %>
+                        <th><%= resultKey %></th> <% /* Headers with result keys */ %>
                     <% } %>
                 </tr>
             </thead>
             <tbody>
-                <% let firstKey = keys[0]; %>
-                <% for (let resultKey in suite.resultsSummary[firstKey]) { %>
+                <% for (let i = 0; i < keys.length - 1; i++) { %>
                     <tr>
-                        <td><%= resultKey %></td> <% /* First column with result keys */ %>
-                        <% for (let i = 0; i < keys.length - 1; i++) { %>
-                            <td><%= suite.resultsSummary[keys[i]][resultKey] %></td> <% /* Subsequent columns with result values */ %>
+                        <td><%= keys[i] %></td> <% /* First column with original headers */ %>
+                        <% for (let resultKey in suite.resultsSummary[firstKey]) { %>
+
+                            <% let value = suite.resultsSummary[keys[i]][resultKey]; %>
+                            <td><%= value %></td>
+
                         <% } %>
                     </tr>
                 <% } %>
@@ -37,3 +40,4 @@
     </div>
 </div>
 <% } %>
+

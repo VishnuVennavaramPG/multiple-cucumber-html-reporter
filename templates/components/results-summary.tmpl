@@ -26,11 +26,14 @@
             <tbody>
                 <% for (let i = 0; i < keys.length - 1; i++) { %>
                     <% var failValueExceedsTen = false; %>
+                    <% var passValueExceedsNinety = false; %>
                     <% for (let resultKey in suite.resultsSummary[firstKey]) { %>
                         <% let value = Number(suite.resultsSummary[keys[i]][resultKey]); %>
                         <% if (resultKey.includes('fail') && value > 10) { %>
                             <% failValueExceedsTen = true; %>
-                            <% break; %>
+                        <% } %>
+                        <% if (resultKey.includes('pass') && value > 90) { %>
+                            <% passValueExceedsNinety = true; %>
                         <% } %>
                     <% } %>
 
@@ -46,10 +49,8 @@
                         <% /* Rest of the columns */ %>
                         <% for (let resultKey in suite.resultsSummary[firstKey]) { %>
                             <% let value = Number(suite.resultsSummary[keys[i]][resultKey]); %>
-                            <% if (resultKey.includes('fail') && value > 10) { %>
-                                <% status = 'Failed'; %>
-                                <% statusIcon = 'exclamation-circle failed-color'; %>
-                                <td><strong><%= value %> <i class="fa fa-<%= statusIcon %> fa-lg" data-toggle="tooltip" data-placement="top" title="<%= status %>"><span><%= statusIcon %></span></i></strong></td>
+                            <% if ((resultKey.includes('fail') && value > 10) || (resultKey.includes('pass') && value > 90)) { %>
+                                <td><strong><%= value %></strong></td>
                             <% } else { %>
                                 <td><%= value %></td>
                             <% } %>

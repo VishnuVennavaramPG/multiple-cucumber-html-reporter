@@ -10,16 +10,28 @@
     </ul>
     <div class="clearfix"></div>
 </div>
-<div class="x_content">
-    <div class="dashboard-widget-content">
-        <table class="quick-list">
+<div class="x_panel">
+    <div class="x_title">
+        <table class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0">
             <thead>
                 <tr>
-                    <th>Platforms</th> <% /* Header for the first column */ %>
+                    <th rowspan="2">Table</th> <!-- Header for the first column -->
+                    <th colspan="3" style="text-align: center;">Features</th> <!-- This header will span columns 2-4 -->
+                    <th colspan="5" style="text-align: center;">Scenarios</th> <!-- This header will span columns 5-7 -->
+                </tr>
+                <tr>
                     <% let keys = Object.keys(suite.resultsSummary); %>
                     <% let firstKey = keys[0]; %>
                     <% for (let resultKey in suite.resultsSummary[firstKey]) { %>
-                        <th><%= resultKey %></th> <% /* Headers with result keys */ %>
+                        <% if (resultKey.includes('pass%')) { %>
+                            <th>Pass%</th> <!-- Header with 'Pass%' -->
+                        <% } else if (resultKey.includes('fail%')) { %>
+                            <th>Fail%</th> <!-- Header with 'Fail%' -->
+                        <% } else if (resultKey.includes('count')) { %>
+                            <th>Total</th> <!-- Header with 'Total' -->
+                        <% } else { %>
+                            <th><%= resultKey %></th> <!-- Headers with other result keys -->
+                        <% } %>
                     <% } %>
                 </tr>
             </thead>
@@ -49,14 +61,15 @@
                         <% /* Rest of the columns */ %>
                         <% for (let resultKey in suite.resultsSummary[firstKey]) { %>
                             <% let value = Number(suite.resultsSummary[keys[i]][resultKey]); %>
-                            <% if ((resultKey.includes('fail') && value > 10) || (resultKey.includes('pass') && value > 90)) { %>
-                                <td><strong><%= value %></strong></td>
+                            <% if (resultKey.includes('fail') && value > 10) { %>
+                                <td><strong style="color: #E74C3C;"><%= value %></strong></td> <!-- Value in red font when fail% > 10 -->
+                            <% } else if (resultKey.includes('pass') && value > 90) { %>
+                                <td><strong style="color: #26B99A;"><%= value %></strong></td> <!-- Value in green font when pass% > 90 -->
                             <% } else { %>
                                 <td><%= value %></td>
                             <% } %>
                         <% } %>
                     </tr>
-
                 <% } %>
             </tbody>
         </table>

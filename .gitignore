@@ -7,3 +7,10 @@ reports/
 .DS_Store
 yarn.lock
 *.tgz
+
+videos/
+screenshots/
+downloads/
+*.ndjson
+dist/
+.run/
